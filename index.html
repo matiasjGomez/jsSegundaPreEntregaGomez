@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/logoNoBg.svg" type="image/x-icon">
+
+    <title>Segunda PreEntrega</title>
+    
+    <!--***CSS Link***-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!--**Products***-->
+    <ul class="product-list items">
+        <li class="product-card item">
+          <img src="img/totk.jpg" alt="TOTK">
+          <h3>Legend of Zelda: Tears of the Kingdom</h3>
+          <p>$46000</p>
+          <button class="btn" onclick="buy(ztotk)">Comprar</button>
+        </li>
+        
+        <li class="product-card item">
+          <img src="img/diabloiv.webp" alt="Diablo IV">
+          <h3>Diablo IV</h3>
+          <p>$46000</p>
+          <button class="btn" onclick="buy(diabloiv)">Comprar</button>
+        </li>
+        
+        <li class="product-card item">
+          <img src="img/sfvi.webp" alt="SF6">
+          <h3>Street Fighter IV</h3>
+          <p>$46000</p>
+          <button class="btn" onclick="buy(sfvi)">Comprar</button>
+        </li>
+        
+        <li class="product-card item">
+          <img src="img/MK1.jpg" alt="MK1">
+          <h3>Mortal Kombat 1</h3>
+          <p>$46000</p>
+          <button class="btn" onclick="buy(mk1)">Comprar</button>
+        </li>
+      </ul>
+
+      <!--***check cart***-->
+      <div>
+        <h4>En carrito</h4>
+      <div>
+      <div id="cart">
+      <button id="open_cart_btn">
+        <img src="img/cart.svg" alt="carticon" style="width: 30px;">
+      </button>
+      </div>
+
+      <div class="subtotal">
+        <p><strong>Subtotal:</strong></p>
+        <p>$ <span id="subtotal_price"></span></p>
+      </div>
+      
+      <div>
+        <button class="btn cursor" onclick="confirmCheckout()">Checkout</button>
+      </div>
+
+    <!--***JavaScript Source-->
+    <script src="js/app.js"></script>
+</body>
+</html>
